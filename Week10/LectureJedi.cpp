@@ -1,4 +1,5 @@
-/* Empty ready for lecture script */
+/* Empty ready for lecture script 
+PartialJedi.cpp is available on GH - the solution script */
 
 #include <iostream>
 #include <string>
@@ -67,17 +68,21 @@ using namespace std;
 // When might you call a member func from within another member func?
 // Maybe you want the default training hours to be 5
 void Jedi::helperFunction() {
+    // mention implicit param here:
     setTrain(5);
 }
 
 
-// Note that main doesn't use Jedi::
+// Note that main doesn't use Jedi:: - Doesn't belong to the Jedi class!
 int main() {
     // We will talk more about how to initialize this object Wednesday
     // Note this object is an instance of the class Jedi
     Jedi obi("Obi-Wan", 100, 60, 12, 10);
+    // Similar to:
+    // Jedi obi();
 
-    // Explicit param?
+    // obi is implicit param.
+    // 5 is argument
     obi.setTrain(5);
 
     return 0;
